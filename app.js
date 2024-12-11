@@ -20,6 +20,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/user', userRoute);
+app.use('/', indexRoute);
 
 
 app.listen(3000, () => {
