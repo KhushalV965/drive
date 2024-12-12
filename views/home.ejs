@@ -12,10 +12,10 @@
 
 <body>
 
-    <main class="p-10 bg-zinc-100 dark:bg-zinc-800">
+    <main class="p-10 bg-zinc-100 dark:bg-zinc-800 w-screen h-screen">
         <button class="bg-blue-500 hover:bg-blue-700 text-white rounded-xl px-7 py-3">Upload</button>
 
-        <div class="popup flex fixed top-0 left-0 w-screen h-screen items-center justify-center">
+        <div class="popup backdrop-blur flex fixed top-0 left-0 w-screen h-screen items-center justify-center">
             <div class="flex items-center justify-center w-96">
                 <label for="dropzone-file"
                     class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
@@ -29,7 +29,7 @@
                                 upload</span> or drag and drop</p>
                         <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
                     </div>
-                    <input id="dropzone-file" type="file" class="hidden" />
+                    <input id="dropzone-file" type="file" class="hidden" name="file" />
                 </label>
             </div>
         </div>
