@@ -13,7 +13,8 @@
 <body>
 
     <main class="p-10 bg-zinc-100 dark:bg-zinc-800 w-screen h-screen">
-        <button onclick="showPopUp()" class="upload-btn bg-blue-500 hover:bg-blue-700 text-white rounded-xl px-7 py-3">Upload</button>
+        <button onclick="showPopUp()"
+            class="upload-btn bg-blue-500 hover:bg-blue-700 text-white rounded-xl px-7 py-3">Upload</button>
 
         <div class="popup hidden backdrop-blur flex fixed top-0 left-0 w-screen h-screen items-center justify-center">
             <form action="/upload" method="post" enctype="multipart/form-data">
@@ -39,10 +40,11 @@
 
                 <button class="bg-zinc-700 hover:bg-zinc-600 text-white mt-5 px-6 py-2 rounded-md">Upload file</button>
             </form>
-            <button onclick="closePopUp()" class="rounded-md fixed top-10 right-10 bg-red-500 text-white px-4 py-2">close</button>
+            <button onclick="closePopUp()"
+                class="rounded-md fixed top-10 right-10 bg-red-500 text-white px-4 py-2">close</button>
         </div>
 
-        
+
 
     </main>
 
