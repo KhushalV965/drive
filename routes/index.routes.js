@@ -9,7 +9,7 @@ router.get('/home', (req, res) => {
 });
 
 router.post('/upload',upload.single('file'),(req,res)=>{
-    
+    res.send(req.file);
 })
 
 
