@@ -11,7 +11,10 @@ router.get('/home', authMiddleware, (req, res) => {
     res.render('home');
 });
 
+router.post('/upload', authMiddleware, upload.single('file'), async (req, res) => {
 
+    
+})
 
 
 
