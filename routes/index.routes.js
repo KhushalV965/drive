@@ -14,6 +14,7 @@ router.get('/home', authMiddleware, (req, res) => {
 router.post('/upload', authMiddleware, upload.single('file'), async (req, res) => {
 
     const newFile = await fileModel.create({
+        path: req.file.path,
         
     })
     
