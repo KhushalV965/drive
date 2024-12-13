@@ -8,8 +8,12 @@ const fileSchema = new mongoose.Schema({
     originalname: {
         type: String,
         required: [true, "originalName is required"]
+    },
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "users",
+        required: [true, "User is required"]
     }
-    
 });
 
 
