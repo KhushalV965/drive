@@ -7,7 +7,7 @@ const authMiddleware = require('../middlewares/auth');
 
 
 
-router.get('/home',  (req, res) => {
+router.get('/home', authMiddleware, (req, res) => {
     res.render('home');
 });
 
