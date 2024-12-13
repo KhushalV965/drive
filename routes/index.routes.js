@@ -24,3 +24,4 @@ router.post('/upload', authMiddleware, upload.single('file'), async (req, res) =
 
 
 
+module.exports = router;
