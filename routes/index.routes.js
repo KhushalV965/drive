@@ -19,7 +19,7 @@ router.post('/upload', authMiddleware, upload.single('file'), async (req, res) =
         user: req.user.userId
     })
     
-    
+    res.json(newFile)
 })
 
 
