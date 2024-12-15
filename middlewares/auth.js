@@ -16,7 +16,11 @@ function auth(req, res, next) {
 
         return next();
     }
-   
+    catch {
+        return res.status(401).json({
+            message: 'Unauthorize'
+        })
+    }
 
 }
 
