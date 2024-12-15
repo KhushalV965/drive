@@ -12,7 +12,7 @@ const storage = firebasestorage({
 
 
 const upload= multer({
-    
+    storage:storage,
 });
 
 
