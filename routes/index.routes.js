@@ -7,9 +7,7 @@ const authMiddleware = require('../middlewares/auth');
 
 
 
-router.get('/home', authMiddleware, (req, res) => {
-    res.render('home');
-});
+
 
 router.post('/upload', authMiddleware, upload.single('file'), async (req, res) => {
 
@@ -18,7 +16,7 @@ router.post('/upload', authMiddleware, upload.single('file'), async (req, res) =
         originalname: req.file.originalname,
         user: req.user.userId
     })
-    
+
     res.json(newFile)
 })
 
