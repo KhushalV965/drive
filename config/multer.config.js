@@ -5,5 +5,11 @@ const serviceAccount= require('../drive-f0601-firebase-adminsdk-uq0sa-7edc30e908
 const { credential } = require('firebase-admin');
 
 
+const storage = firebasestorage({
+    credentials: firebase.credential.cert(serviceAccount),
+    bucketName:'drive-f0601.firebasestorage.app'
+});
+
+
 
 
