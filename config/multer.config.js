@@ -11,5 +11,9 @@ const storage = firebasestorage({
 });
 
 
-const upload= 
+const upload= multer({
+    
+});
+
+
 
