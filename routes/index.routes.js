@@ -4,7 +4,7 @@ const upload = require('../config/multer.config');
 const fileModel = require("../models/file.model");
 const authMiddleware = require('../middlewares/auth');
 
-router.get('/home', authMiddleware, (req, res) => {
+router.get('/home', (req, res) => {
     res.render('home');
 });
 
