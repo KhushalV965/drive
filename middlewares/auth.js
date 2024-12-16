@@ -10,7 +10,10 @@ function auth(req, res, next) {
         })
     }
 
-    try 
+    try {
+       
+    }
+   
 
 }
 
