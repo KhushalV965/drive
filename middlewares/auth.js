@@ -17,7 +17,7 @@ function auth(req, res, next) {
         return next();
     }
     catch {
-        return res
+        return res.status(401)
     }
 
 }
